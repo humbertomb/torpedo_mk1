@@ -1,0 +1,13 @@
+# Torpedo Mk I
+
+
+
+A) Disparo con el tiempo programado del último disparo:
+Encender el sistema poniendo y quitando el imán durante menos de 1 segundo (el sistema nos dará un feedback).
+Pasar el imán de nuevo para proceder al disparo por el tiempo almacenado en la EEPROM.
+B) Disparo por un tiempo concreto:
+Encender el sistema poniendo y manteniendo el imán durante el tiempo de inicio (1seg) y durante el tiempo de programación que queramos programar sin quitar el imán, (el sistema nos dará un feedback nada más arrancar, trascurrido un segundo nos dará el segundo feedback y empezará a programar el tiempo de propulsión y cuando liberemos la entrada nos dará el tercer feedback y memorizará el tiempo de propulsión)
+ Pasar el imán de nuevo para proceder al disparo por el tiempo programado en el paso 1.
+Te recuerdo los sistemas de cancelación de disparo implementados a partir de la versión anterior:
+Durante la propulsión, mientras que el motor está activo, activando la entrada el sistema se apaga. Así podemos cancelar un disparo fallido.
+Si en cualquiera de los estados del sistema pasa más de un minuto el sistema se apaga.
